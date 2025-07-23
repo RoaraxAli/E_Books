@@ -14,7 +14,7 @@
       max-width: 900px;
       margin: auto;
     }
-    h1, h2 {
+    h1, h2, h3 {
       color: #1f2937;
     }
     code {
@@ -91,9 +91,4 @@ $password = "";
 $database = "finalbook1";</code></pre>
 
   <h3>4. Configure PHPMailer (Optional)</h3>
-  <p>Set your Gmail credentials in <code>.env</code> or directly in <code>signups.php</code>:</p>
-  <pre><code>$_ENV['GMAIL_USERNAME'] = 'your-email@gmail.com';
-$_ENV['GMAIL_APP_PASSWORD'] = 'your-app-password';</code></pre>
-
-</body>
-</html>
+  <p>Set your Gmail credentials in <code>.env</code> or directly in <code>signups.php
