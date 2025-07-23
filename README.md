@@ -49,17 +49,11 @@ $username = "root";
 $password = "";
 $database = "finalbook1";</code></pre>
 
-    <h3>4. Configure PHPMailer (Optional)</h3>
+  <h3>4. Configure PHPMailer (Optional)</h3>
   <p>Set your Gmail credentials either in the <code>.env</code> file or directly in <code>signups.php</code> to enable email verification via PHPMailer.</p>
   <p><strong>Example <code>.env</code> file:</strong></p>
   <pre><code>GMAIL_USERNAME=your-email@gmail.com
 GMAIL_APP_PASSWORD=your-app-password
-GMAIL_FROM_NAME=E_Books Library
-GMAIL_FROM_EMAIL=your-email@gmail.com</code></pre>
-  <p>Then, make sure you're loading environment variables using <code>$_ENV</code> or <code>getenv()</code> in your PHP code:</p>
-  <pre><code>use PHPMailer\PHPMailer\PHPMailer;
-$mail = new PHPMailer(true);
-$mail->Username = $_ENV['GMAIL_USERNAME'];
-$mail->Password = $_ENV['GMAIL_APP_PASSWORD'];
-$mail->setFrom($_ENV['GMAIL_FROM_EMAIL'], $_ENV['GMAIL_FROM_NAME']);</code></pre>
+
+
 
